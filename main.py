@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import os
 import requests  # noqa We are just importing this to prove the dependency installed correctly
 from github3 import login
