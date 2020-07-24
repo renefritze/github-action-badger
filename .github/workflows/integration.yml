@@ -14,6 +14,6 @@ jobs:
           myInput: world
           repotoken: ${{ secrets.GITHUB_TOKEN }}
 
-      # - name: Check outputs
-      #   run: |
-      #     test "${{ steps.selftest.outputs.myOutput }}" == "Hello world"
+       - name: Check outputs
+         run: |
+           echo OUTPUT ${{ steps.selftest.outputs.myOutput }}
