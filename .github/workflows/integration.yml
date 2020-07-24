@@ -13,7 +13,6 @@ jobs:
         with:
           myInput: world
           repotoken: ${{ secrets.GITHUB_TOKEN }}
-
-       - name: Check outputs
-         run: |
-           echo "${{ steps.selftest.outputs.myOutput }}"
+      - name: Check outputs
+        run: |
+          echo "${{ steps.selftest.outputs.myOutput }}"
