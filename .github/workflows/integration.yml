@@ -16,4 +16,4 @@ jobs:
 
        - name: Check outputs
          run: |
-           echo OUTPUT ${{ steps.selftest.outputs.myOutput }}
+           echo "${{ steps.selftest.outputs.myOutput }}"
