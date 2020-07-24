@@ -16,7 +16,7 @@ def main():
     import json
     context = json.load(open(event_data_file))
 
-    my_output = f"Hello! I am {pprint.pformat(context.keys())}"
+    my_output = pprint.pformat(context.keys())
 
     print(f"::set-output name=myOutput::{my_output}")
 
