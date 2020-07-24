@@ -9,7 +9,7 @@ jobs:
         id: selftest
 
         # Put your action repo here
-        uses: renefritze/github-action-badger@master
+        uses: ./
         with:
           myInput: world
           repotoken: ${{ secrets.GITHUB_TOKEN }}
